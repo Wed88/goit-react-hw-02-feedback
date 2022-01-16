@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Container, Title } from './Section.styled';
 
 const Section = ({ title, children }) => (
-  <section>
-    <h1>{title}</h1>
+  <Container>
+    <Title>{title}</Title>
     {children}
-  </section>
+  </Container>
 );
 
 Section.prototype = {
